@@ -1,0 +1,98 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.env
+venv/
+.venv/
+.envrc
+
+# Jupyter / notebooks outputs
+.ipynb_checkpoints/
+
+# -----------------------------
+# DBT
+# -----------------------------
+target/
+dbt_packages/
+logs/
+
+# Local profiles (tuyệt đối không push)
+~/.dbt/
+profiles.yml
+
+# -----------------------------
+# Airflow
+# -----------------------------
+airflow/logs/
+airflow/dags/__pycache__/
+airflow/plugins/__pycache__/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# Docker volumes (nếu mount ra ngoài)
+dags/logs/
+plugins/
+logs/
+
+# -----------------------------
+# Kafka / Debezium / MinIO
+# -----------------------------
+kafka-logs/
+zookeeper/
+connect-logs/
+minio_data/
+
+# -----------------------------
+# Postgres
+# -----------------------------
+*.sql-journal
+pgdata/
+postgres-data/
+
+# -----------------------------
+# VSCode / IDE
+# -----------------------------
+.vscode/
+.idea/
+*.iml
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Docker
+# -----------------------------
+*.pid
+docker/*.pid
+docker/*.log
+docker-compose.override.yml
+
+# -----------------------------
+# Certificates / Secrets (nếu có)
+# -----------------------------
+*.pem
+*.key
+*.crt
+secrets/
+creds/
+.env.local
+.env.dev
+.env.prod
+.env.test
+
+# -----------------------------
+# Build / Temp
+# -----------------------------
+build/
+dist/
+tmp/
+temp/
