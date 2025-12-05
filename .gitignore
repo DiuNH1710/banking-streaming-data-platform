@@ -23,6 +23,9 @@ logs/
 
 # Local profiles (tuyệt đối không push)
 ~/.dbt/
+*.dbt
+/.dbt/
+
 profiles.yml
 
 # -----------------------------
@@ -96,3 +99,4 @@ build/
 dist/
 tmp/
 temp/
+
